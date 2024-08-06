@@ -23,7 +23,6 @@ def parse_data(html_data):
                 parsed_data.append((char, x, y))
             except ValueError:
                 continue
-    print(parsed_data)
     return parsed_data
 
 
