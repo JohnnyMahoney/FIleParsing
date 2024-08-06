@@ -33,9 +33,10 @@ def create_grid(parsed_data):
     max_x = max(item[1] for item in parsed_data)
     max_y = max(item[2] for item in parsed_data)
     grid = [[' ' for _ in range(max_x + 1)] for _ in range(max_y + 1)]
+
     for char, x, y in parsed_data:
         grid[y][x] = char
-
+    print(grid)
     return grid
 
 
